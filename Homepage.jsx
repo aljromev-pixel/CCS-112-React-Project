@@ -30,6 +30,16 @@ function HomePage() {
             behavior: "smooth",
           })
         }
+        style={{
+          marginTop: "20px",
+          padding: "12px 25px",
+          border: "none",
+          borderRadius: "8px",
+          backgroundColor: "#2563eb",
+          color: "white",
+          fontSize: "16px",
+          cursor: "pointer",
+        }}
       >
         Learn More
       </button>
