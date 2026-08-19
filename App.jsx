@@ -8,28 +8,25 @@ import "./index.css";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <nav className="navbar">
         <div className="nav-logo">My Website</div>
 
         <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
         </div>
       </nav>
 
       <main>
-        <section id="home">
-          <HomePage />
-        </section>
-
-        <section id="about">
-          <AboutPage />
-        </section>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
       </main>
 
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
